@@ -16,7 +16,7 @@ include_once( get_stylesheet_directory() . '/lib/theme-defaults.php' );
 // Set Localization (do not remove).
 add_action( 'after_setup_theme', 'digital_localization_setup' );
 function digital_localization_setup(){
-	load_child_theme_textdomain( 'digital-pro', get_stylesheet_directory() . '/languages' );
+	load_child_theme_textdomain( '4all-digital', get_stylesheet_directory() . '/languages' );
 }
 
 // Add the theme's helper functions.
@@ -29,9 +29,9 @@ require_once( get_stylesheet_directory() . '/lib/customize.php' );
 include_once( get_stylesheet_directory() . '/lib/output.php' );
 
 // Child theme
-define( 'CHILD_THEME_NAME', '4All Digital' );
-define( 'CHILD_THEME_URL', 'https://www.homerunfinancing.com' );
-// $rand = rand();
+define( 'CHILD_THEME_NAME', 'Fierce' );
+define( 'CHILD_THEME_URL', 'https://getfierce.com' );
+$rand = rand();
 define( 'CHILD_THEME_VERSION', '1.0');
 
 // Enqueue scripts and styles.
@@ -181,8 +181,8 @@ remove_action( 'genesis_header','genesis_do_nav' ) ;
 
 // Add support for custom header.
 add_theme_support( 'custom-header', array(
-	'width'           => 600,
-	'height'          => 140,
+	'width'           => ",
+	'height'          => ",
 	'header-selector' => '.site-title a',
 	'header-text'     => false,
 	'flex-height'     => true,

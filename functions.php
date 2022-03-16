@@ -38,11 +38,11 @@ define( 'CHILD_THEME_VERSION', '1.0');
 add_action( 'wp_enqueue_scripts', 'digital_scripts_styles' );
 function digital_scripts_styles() {
 
-    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600', array(), CHILD_THEME_VERSION );
-	wp_enqueue_style( 'fancy-box-css', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css', array(), CHILD_THEME_VERSION);
+    // wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600', array(), CHILD_THEME_VERSION );
+	// wp_enqueue_style( 'fancy-box-css', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css', array(), CHILD_THEME_VERSION);
+	// wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/273d628194.js', array( 'jquery' ), CHILD_THEME_VERSION);
+	// wp_enqueue_script( 'fancy-box', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true);
 
-	wp_enqueue_script( 'fontawesome', 'https://kit.fontawesome.com/273d628194.js', array( 'jquery' ), CHILD_THEME_VERSION);
-	wp_enqueue_script( 'fancy-box', 'https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true);
     wp_enqueue_script( 'digital-global-scripts', get_stylesheet_directory_uri() . '/js/global.js', array( 'jquery' ), CHILD_THEME_VERSION, true);
 
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';

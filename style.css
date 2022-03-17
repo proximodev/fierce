@@ -1804,6 +1804,26 @@ header.site-header .genesis-nav-menu .sub-menu a:hover {
 	margin-right: 8px;
 }
 
+#menu-footer.genesis-nav-menu {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+#menu-footer.genesis-nav-menu .menu-item {
+	text-transform: uppercase;
+	margin: 0px;
+}
+
+#menu-footer.genesis-nav-menu .menu-item a:after {
+	content: '|';
+	margin-left: 5px;
+}
+
+#menu-footer.genesis-nav-menu .menu-item:last-child a:after {
+	content: '';
+	margin-left: 5px;
+}
+
 
 /* Accessible Menu
 --------------------------------------------- */
@@ -1870,10 +1890,6 @@ header.site-header .genesis-nav-menu .sub-menu a:hover {
 
 /* Secondary Navigation (Footer)
 --------------------------------------------- */
-
-.nav-secondary {
-	float: left;
-}
 
 .nav-secondary .genesis-nav-menu a {
 	padding: 0;
@@ -2250,7 +2266,7 @@ p.form-submit,
 	background-color: #1F1F1F;
 	clear: both;
 	text-align: left;
-	padding: 60px;
+	padding: 60px 0 0 0;
 }
 
 .footer-widgets-1,
@@ -2499,15 +2515,8 @@ p.form-submit,
 		float: right;
 	}
 
-	.nav-cta {
-		float: none;
-	}
-
 	.nav-cta .genesis-nav-menu {
-		float: none;
-		clear: both;
-		border-top: 1px solid #CCCCCC;
-		padding-top: 16px;
+		padding-top: 10px;
 	}
 
 	.nav-cta .genesis-nav-menu a {
@@ -2542,16 +2551,13 @@ p.form-submit,
 
 	#menu-cta .gb-button {
 		float: right;
-		background-color: transparent !important;
 		margin: 0px;
-		padding: 0px;
-		height: auto;
-		color: #7600ec !important;
+		padding: 11px 20px 11px 19px;
 		line-height: 1 !important;
 	}
 
-	 #menu-cta .gb-button a {
-		color: #7600ec !important;
+	#menu-cta .gb-button a {
+
 	}
 }
 
@@ -2625,7 +2631,7 @@ p.form-submit,
 
 	/** Header and nav **/
 	.header-image .site-header {
-		padding: 10px 30px;
+		padding: 10px 20px;
 		position: fixed;
 	}
 
@@ -2643,10 +2649,14 @@ p.form-submit,
 		z-index: 1;
 	}
 
+	.header-image .site-title > a {
+		float: left;
+		min-height: 30px;
+		width: 112px !important;
+		height: auto;
+	}
+
 	.header-image .nav-cta:not(button) {
-		width: 100%;
-		float: none;
-		top: -5px !important;
 		position: relative;
 		margin-top: 0px !important;
 	}
